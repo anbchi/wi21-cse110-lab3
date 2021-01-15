@@ -22,9 +22,6 @@
     
     <section>
       <h2>Introduction</h2>
-      <div>
-        <p>The reason for this section is to explain that this will consist of lyrics from the song above.</p>
-      </div>
     </section>
     
     <h3>Lyrics</h3>
@@ -47,8 +44,51 @@
              /       \
       </pre>
       
+      <label for="appt">Choose the time when you are reading this:</label>
+
+      <input type="time" id="appt" name="appt"
+             min="00:00" max="24:00" required>
+
+      <small>Office hours are 9am to 6pm</small>
+      
+      <label for="email">Enter your UCSD email:</label>
+
+      <input type="email" id="email"
+             pattern=".+@ucsd.edu" size="30" required>
+      
+      <div>
+          <label for="pass">Password (8 characters minimum):</label>
+          <input type="password" id="pass" name="password"
+                 minlength="8" required>
+      </div>
+      
+      <label for="phone">Enter your phone number:</label>
+
+      <input type="tel" id="phone" name="phone"
+             pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+             required>
+
+      <small>Format: 123-456-7890</small>
+      
+      <label for="start">Start month:</label>
+
+      <input type="month" id="start" name="start"
+             min="2018-03" value="2018-05">
+      
+      <label for="story">Tell us about yourself:</label>
+
+      <textarea id="story" name="story"
+                rows="5" cols="33">
+      Story Here:...
+      </textarea>
+      
       <aside>This text is for the aside part and <code>code()</code></aside>
     
+      <details>
+          <summary>Details</summary>
+          Something small enough to escape casual notice.
+      </details>
+      
       <p>
       <span class="heads">Head</span>, <b>shoulders</b>, <i>knees</i> and toes
       <i>Knees</i> and toes
@@ -82,6 +122,27 @@
         <li>Toes</li>
       </ol>
       
+      <form action="" method="get" class="form-example">
+        <div class="form-example">
+          <label for="num">Enter how many times "Head" is repeated: </label>
+          <input type="number" name="heads" id="heads" required>
+        </div>
+        <div class="form-example">
+          <label for="num">Enter how many times "Shoulders" is repeated in word form: </label>
+          <input type="text" name="shoulders" id="shoulders" required
+                   minlength="2" maxlength="20" size="10">
+        </div>
+        <div class="form-example">
+          <input type="submit" value="Submit!">
+        </div>
+      </form>
+      
+      <button class="favorite styled"
+             type="button">
+             Add to favorites"
+      </button>
+
+      
       <p>Non-repeated Words<p/>
 
       <ul>
@@ -90,6 +151,111 @@
           <li>Mouth</li>
           <li>Nose</li>
       </ul>
+      
+      <label for="body-select">Choose a bdoy part:</label>
+      <select id="body-select">
+          <optgroup label="Theropods">
+              <option>head</option>
+              <option>shoulders</option>
+              <option>knees</option>
+              <option>toes</option>
+          </optgroup>
+      </select>
+      
+      <form>
+        <fieldset>
+          <legend>Choose your body part</legend>
+
+          <input type="radio" id="head" name="body">
+          <label for="head">Head</label><br/>
+
+          <input type="radio" id="shoulders" name="body">
+          <label for="shoulders">Shoulders</label><br/>
+
+          <input type="radio" id="knees" name="body">
+          <label for="knees">Knees</label>
+          
+          <input type="radio" id="toes" name="body">
+          <label for="toes">Toes</label>
+        </fieldset>
+      </form>
+      
+      <label for="ice-cream-choice">Choose a number:</label>
+        <input list="numbers" id="numbers" name="numbers" />
+
+        <datalist id="numbers">
+            <option value="one">
+            <option value="two">
+            <option value="three">
+            <option value="four">
+            <option value="five">
+        </datalist>
+      
+      <template id="numbers">
+          <tr>
+            <td class="n"></td>
+            <td></td>
+          </tr>
+        </template>
+
+      <label for="more">Choose another number:</label>
+
+      <select name="others" id="others">
+          <option value="">--Please choose an option--</option>
+          <option value="six">six</option>
+          <option value="seven">seven</option>
+          <option value="eight">eight</option>
+          <option value="nine">nine</option>
+          <option value="zero">zero</option>
+      </select>
+
+      <table>
+          <caption>Giberish table</caption>
+          <tr>
+              <th scope="col">Player</th>
+              <th scope="col">Gloobles</th>
+              <th scope="col">Za'taak</th>
+          </tr>
+          <tr>
+              <th scope="row">TR-7</th>
+              <td>7</td>
+              <td>4,569</td>
+          </tr>
+          <tr>
+              <th scope="row">Khiresh Odo</th>
+              <td>7</td>
+              <td>7,223</td>
+          </tr>
+          <tr>
+              <th scope="row">Mia Oolong</th>
+              <td>9</td>
+              <td>6,219</td>
+          </tr>
+      </table>
+
+      <table>
+          <caption>Another Random Table</caption>
+          <colgroup>
+              <col>
+              <col span="2" class="batman">
+              <col span="2" class="flash">
+          </colgroup>
+          <tr>
+              <td> </td>
+              <th scope="col">Batman</th>
+              <th scope="col">Robin</th>
+              <th scope="col">The Flash</th>
+              <th scope="col">Kid Flash</th>
+          </tr>
+          <tr>
+              <th scope="row">Skill</th>
+              <td>Smarts</td>
+              <td>Dex, acrobat</td>
+              <td>Super speed</td>
+              <td>Super speed</td>
+          </tr>
+      </table>
+
       
       <figure>
         <figcaption>Random audio</figcaption>
