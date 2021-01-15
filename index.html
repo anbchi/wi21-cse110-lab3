@@ -122,13 +122,13 @@
         <li>Toes</li>
       </ol>
       
-      <form action="" method="get" class="form-example">
+      <form action="get" method="get" class="form-example">
         <div class="form-example">
-          <label for="num">Enter how many times "Head" is repeated: </label>
+          <label>Enter how many times "Head" is repeated: </label>
           <input type="number" name="heads" id="heads" required>
         </div>
         <div class="form-example">
-          <label for="num">Enter how many times "Shoulders" is repeated in word form: </label>
+          <label">Enter how many times "Shoulders" is repeated in word form: </label>
           <input type="text" name="shoulders" id="shoulders" required
                    minlength="2" maxlength="20" size="10">
         </div>
@@ -143,7 +143,7 @@
       </button>
 
       
-      <p>Non-repeated Words<p/>
+      <p>Non-repeated Words</p>
 
       <ul>
           <li>Eyes</li>
@@ -169,7 +169,7 @@
           <input type="radio" id="head" name="body">
           <label for="head">Head</label><br/>
 
-          <input type="radio" id="shoulders" name="body">
+          <input type="radio" id="shoulder" name="body">
           <label for="shoulders">Shoulders</label><br/>
 
           <input type="radio" id="knees" name="body">
@@ -180,7 +180,7 @@
         </fieldset>
       </form>
       
-      <label for="ice-cream-choice">Choose a number:</label>
+      <label>Choose a number:</label>
         <input list="numbers" id="numbers" name="numbers" />
 
         <datalist id="numbers">
@@ -191,7 +191,7 @@
             <option value="five">
         </datalist>
       
-      <template id="numbers">
+      <template id="numb">
           <tr>
             <td class="n"></td>
             <td></td>
