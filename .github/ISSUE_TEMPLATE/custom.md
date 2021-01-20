@@ -8,6 +8,3 @@ assignees: ''
 ---
 
 What is the Issue?
-
-
-How to solve it?
