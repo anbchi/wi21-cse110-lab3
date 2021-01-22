@@ -1,0 +1,40 @@
+h1 {
+  color: #000;
+  margin-left: 20px;
+  margin-right: 10px;
+  margin-bottom: 30px;
+  margin-top: 40px;
+}
+
+h2 {
+  color: #FF9900;
+  width: 75%;
+  height: 1em;
+}
+
+h3 {
+  color: hsl(120, 77%, 27%);
+  margin: auto;
+  border-color: red green orange purple;
+  border-style: solid;
+  border-width: 30px 30px 30px 30px;
+  border-radius: 10px 10px;
+}
+
+p {
+  color: rgb(12, 45, 129);
+  margin: 3rem 0 0 -3rem;
+}
+
+label {
+  color: rgba(56, 155, 66, 1);
+  padding-top: 25pt;
+  padding-left: 50pt;
+  padding-right: 50pt;
+  padding-top: 25pt;
+}
+
+legend {
+  color: hsl(10, 50%, 50%, 80%);
+  padding: 1in .5in .5in 1in;
+}
